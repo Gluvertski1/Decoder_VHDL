@@ -1,0 +1,20 @@
+|Decoder
+i_DEN => o_OUT[0].OUTPUTSELECT
+i_DEN => o_OUT[1].OUTPUTSELECT
+i_DEN => o_OUT[2].OUTPUTSELECT
+i_DEN => o_OUT[3].IN1
+i_DEN => o_OUT[3].OUTPUTSELECT
+i_A[0] => Equal0.IN1
+i_A[0] => Equal1.IN1
+i_A[0] => Equal2.IN0
+i_A[0] => Equal3.IN1
+i_A[1] => Equal0.IN0
+i_A[1] => Equal1.IN0
+i_A[1] => Equal2.IN1
+i_A[1] => Equal3.IN0
+o_OUT[0] <= o_OUT[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_OUT[1] <= o_OUT[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_OUT[2] <= o_OUT[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_OUT[3] <= o_OUT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
